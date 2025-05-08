@@ -10,6 +10,6 @@ planetsApi.interceptors.request.use((config) => {
     setTimeout(() => {
       resolve(config);
       // reject(new Error('Error de prueba desde interceptor'));
-    }, 2000);
+    }, 1000);
   });
 });
