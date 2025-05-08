@@ -4,7 +4,6 @@ import type { Planet } from "../interfaces/planet.interface";
 export const updatePlanetAction = async( planet: Planet ) => {
 
     try {
-        
         const response = await planetsApi.patch<Planet>(`/${ planet.id }`, planet);
         console.log('Planeta actualizado!');
         return response.data;
